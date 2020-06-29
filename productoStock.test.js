@@ -9,6 +9,6 @@ test('verificar-stock-producto-no-negativo', () => {
             this.descripcion = descripcionProd;
         }
     }
-    var producto1 = new Producto("lapicera",12,234,"asd");
-    expect(getStock(producto1)).toBeGreaterThan(0);
-  });t
+    var producto1 = new Producto("lapicera",12,-123,"asd");
+    expect(getStock(producto1)).toBeGreaterThanOrEqual(0);
+  });
