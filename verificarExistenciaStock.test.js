@@ -9,14 +9,14 @@ describe("validarCantidad", () => {
     class Producto {
 
 
-        constructor(nombre,stock,detalle){
+        constructor(nombre,stock,precio){
             this.nombre=nombre
             this.stock=stock 
-            this.detalle=detalle 
+            this.precio=precio 
 
         }
     }
-    lapiceras = new Producto("lapiceras",0,"blablabla")
+    lapiceras = new Producto("lapiceras",0,1999)
         
     expect(verificarExistenciaStock(lapiceras)).toBeUndefined();
     })
